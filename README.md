@@ -5,7 +5,7 @@
 ## 安装 💡
 
 ```shell
-go get -u github.com/opq-osc/OPQBot/v2@latest
+go get -u github.com/cross10/OPQBot/v2@latest
 ```
 
 ## 使用方法
@@ -15,8 +15,8 @@ package main
 
 import (
 	"context"
-	"github.com/opq-osc/OPQBot/v2"
-	"github.com/opq-osc/OPQBot/v2/events"
+	"github.com/cross10/OPQBot/v2"
+	"github.com/cross10/OPQBot/v2/events"
 )
 
 func main() {
