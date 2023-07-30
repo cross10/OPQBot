@@ -11,7 +11,7 @@ type IMsg interface {
 	PicMsg(...*File) IMsg
 	XmlMsg(xml string) IMsg
 	JsonMsg(json string) IMsg
-	At(uint ...int64) IMsg
+	At(string, ...int64) IMsg
 	DoApi
 }
 
@@ -82,14 +82,15 @@ func (b *Builder) JsonMsg(json string) IMsg {
 	b.CgiRequest.Content = &json
 	return b
 }
-func (b *Builder) At(uin ...int64) IMsg {
+func (b *Builder) At(nick string, uin ...int64) IMsg {
 	if b.CgiRequest == nil {
 		b.CgiRequest = &CgiRequest{}
 	}
 	for _, v := range uin {
 		qq := struct {
-			Uin *int64 `json:"Uin,omitempty"`
-		}{Uin: &v}
+			Uin  *int64  `json:"Uin,omitempty"`
+			Nick *string `json:"Nick,omitempty"`
+		}{Uin: &v, Nick: &nick}
 		b.CgiRequest.AtUinLists = append(b.CgiRequest.AtUinLists, qq)
 	}
 	return b

@@ -4,10 +4,11 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/charmbracelet/log"
-	"github.com/imroc/req/v3"
 	"net/url"
 	"strconv"
+
+	"github.com/charmbracelet/log"
+	"github.com/imroc/req/v3"
 )
 
 type DoApi interface {
@@ -42,7 +43,8 @@ type CgiRequest struct {
 	Images     []*File `json:"Images,omitempty"`
 	Uid        *string `json:"Uid,omitempty"`
 	AtUinLists []struct {
-		Uin *int64 `json:"Uin,omitempty"`
+		Uin  *int64  `json:"Uin,omitempty"`
+		Nick *string `json:"Nick,omitempty"`
 	} `json:"AtUinLists,omitempty"`
 }
 
