@@ -3,10 +3,10 @@ package OPQBot
 import (
 	"context"
 	"github.com/charmbracelet/log"
+	"github.com/cross10/OPQBot/v2/apiBuilder"
+	"github.com/cross10/OPQBot/v2/errors"
+	"github.com/cross10/OPQBot/v2/events"
 	"github.com/gorilla/websocket"
-	"github.com/opq-osc/OPQBot/v2/apiBuilder"
-	"github.com/opq-osc/OPQBot/v2/errors"
-	"github.com/opq-osc/OPQBot/v2/events"
 	"github.com/rotisserie/eris"
 	"net/url"
 	"os"

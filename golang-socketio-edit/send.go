@@ -3,7 +3,7 @@ package gosocketio
 import (
 	"encoding/json"
 	"errors"
-	"github.com/mcoo/OPQBot/golang-socketio-edit/protocol"
+	"github.com/cross10/OPQBot/golang-socketio-edit/protocol"
 	"log"
 	"time"
 )
@@ -13,7 +13,8 @@ var (
 	ErrorSocketOverflood = errors.New("Socket overflood")
 )
 
-/**
+/*
+*
 Send message packet to socket
 */
 func send(msg *protocol.Message, c *Channel, args interface{}) error {
@@ -47,7 +48,8 @@ func send(msg *protocol.Message, c *Channel, args interface{}) error {
 	return nil
 }
 
-/**
+/*
+*
 Create packet based on given data and send it
 */
 func (c *Channel) Emit(method string, args interface{}) error {
@@ -59,7 +61,8 @@ func (c *Channel) Emit(method string, args interface{}) error {
 	return send(msg, c, args)
 }
 
-/**
+/*
+*
 Create ack packet based on given data and send it and receive response
 */
 func (c *Channel) Ack(method string, args interface{}, timeout time.Duration) (string, error) {

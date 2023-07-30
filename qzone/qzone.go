@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/cross10/OPQBot"
 	"github.com/dop251/goja"
-	"github.com/mcoo/OPQBot"
 	"github.com/mcoo/requests"
 )
 

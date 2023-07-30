@@ -3,10 +3,10 @@ package main
 import (
 	"context"
 	"github.com/charmbracelet/log"
-	_ "github.com/mcoo/OPQBot/session/provider"
-	"github.com/opq-osc/OPQBot/v2"
-	"github.com/opq-osc/OPQBot/v2/apiBuilder"
-	"github.com/opq-osc/OPQBot/v2/events"
+	_ "github.com/cross10/OPQBot/session/provider"
+	"github.com/cross10/OPQBot/v2"
+	"github.com/cross10/OPQBot/v2/apiBuilder"
+	"github.com/cross10/OPQBot/v2/events"
 )
 
 func main() {

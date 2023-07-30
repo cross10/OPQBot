@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mcoo/OPQBot"
+	"github.com/corss10/OPQBot"
 	"github.com/mcoo/requests"
 )
 

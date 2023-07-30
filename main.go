@@ -21,11 +21,11 @@ import (
 	"github.com/sirupsen/logrus"
 
 	nested "github.com/antonfisher/nested-logrus-formatter"
+	gosocketio "github.com/cross10/OPQBot/golang-socketio-edit"
+	"github.com/cross10/OPQBot/golang-socketio-edit/transport"
+	"github.com/cross10/OPQBot/session"
+	_ "github.com/cross10/OPQBot/session/provider"
 	"github.com/goinggo/mapstructure"
-	gosocketio "github.com/mcoo/OPQBot/golang-socketio-edit"
-	"github.com/mcoo/OPQBot/golang-socketio-edit/transport"
-	"github.com/mcoo/OPQBot/session"
-	_ "github.com/mcoo/OPQBot/session/provider"
 	"github.com/mcoo/requests"
 )
 

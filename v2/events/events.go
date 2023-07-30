@@ -3,7 +3,7 @@ package events
 import (
 	"context"
 	"encoding/json"
-	"github.com/opq-osc/OPQBot/v2/apiBuilder"
+	"github.com/cross10/OPQBot/v2/apiBuilder"
 	"strings"
 )
 

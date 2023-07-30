@@ -3,11 +3,11 @@ package apiBuilder
 import (
 	"bytes"
 	"encoding/base64"
+	"github.com/cross10/OPQBot/v2/errors"
 	"github.com/imroc/req/v3"
 	"github.com/makiuchi-d/gozxing"
 	"github.com/makiuchi-d/gozxing/qrcode"
 	"github.com/mdp/qrterminal/v3"
-	"github.com/opq-osc/OPQBot/v2/errors"
 	"image"
 	_ "image/png"
 	"io"

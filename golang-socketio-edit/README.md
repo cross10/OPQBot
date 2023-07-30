@@ -10,7 +10,7 @@ Examples directory contains simple client and server.
 
 ### Installation
 
-    go get github.com/mcoo/OPQBot/golang-socketio
+    go get github.com/cross10/OPQBot/golang-socketio
 
 ### Simple server usage
 

@@ -3,7 +3,7 @@ package provider
 import (
 	"container/list"
 	"errors"
-	"github.com/mcoo/OPQBot/session"
+	"github.com/cross10/OPQBot/session"
 	"sync"
 	"time"
 )

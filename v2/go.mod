@@ -1,4 +1,4 @@
-module github.com/opq-osc/OPQBot/v2
+module github.com/cross10/OPQBot/v2
 
 go 1.19
 
@@ -7,7 +7,7 @@ require (
 	github.com/gorilla/websocket v1.5.0
 	github.com/imroc/req/v3 v3.33.2
 	github.com/makiuchi-d/gozxing v0.1.1
-	github.com/mcoo/OPQBot v0.2.1
+	github.com/cross10/OPQBot v0.2.1
 	github.com/mdp/qrterminal/v3 v3.0.0
 	github.com/rotisserie/eris v0.5.4
 )
