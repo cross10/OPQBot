@@ -60,6 +60,7 @@ type IGroupMsg interface {
 	AtBot() bool
 	GetGroupUin() int64
 	GetSenderUin() int64
+	GetSenderNick() string
 	ParseTextMsg() ITextMsg
 	ContainedPic() bool
 	ContainedAt() bool
@@ -186,6 +187,9 @@ func (e *EventStruct) ExcludeBot() IEvent {
 }
 func (e *EventStruct) GetSenderUin() int64 {
 	return e.CurrentPacket.EventData.MsgHead.SenderUin
+}
+func (e *EventStruct) GetSenderNick() string {
+	return e.CurrentPacket.EventData.MsgHead.SenderNick
 }
 func (e *EventStruct) GetApiBuilder() apiBuilder.IMainFunc {
 	return apiBuilder.NewApi(e.apiUrl, e.CurrentQQ, e.middleCallFunc...)
